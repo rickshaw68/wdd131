@@ -1,63 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Layout */
 body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 3fr 1fr;
     height: 100vh;
-    margin: 0;
+    gap: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
-    background: lightpink;
-    padding: 2rem;
+    background-color: lightpink;
+    padding: 0;
+    /*this will align the header with the nav bar*/
     grid-column: 1 / 3;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*this aligns the nav bar with the bottom of the header box*/
+    height: 12rem;
 }
 
 
+/* Navigation */
 nav {
     background-color: black;
     grid-column: 1 / 3;
-    
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
 }
 
+/* Navigation List */
 .navigation {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 0;
     margin: 0;
-    padding: 0.5rem 0;
 }
 
+/* Navigation Links */
 .navigation li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
     text-align: center;
+    padding: 0.5rem 1rem;
 }
 
 .navigation li a:hover {
-    font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: yellow;
 }
 
+/* Main Content */
 .main-content {
-    background: lightblue;
+    background-color: lightblue;
     padding: 1rem;
     grid-column: 1 / 2;
     grid-row: 3;
-    }
+}
 
+/* Aside Content */
 .aside-content {
-    background: teal;
+    background-color: teal;
     padding: 1rem;
     grid-column: 2 / 3;
     grid-row: 3;
 }
 
+/* Footer */
 footer {
-    background: wheat;
-    padding: 6rem;
+    background-color: wheat;
+    padding: 6%;
     grid-column: 1 / 3;
+    grid-row: 4;
     text-align: center;
 }
