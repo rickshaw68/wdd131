@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>WDD 131 Rick Shaw</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Rick Shaw</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rick Shaw | My Home Page">
+    <meta name="author" content="Rick Shaw">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
+
 <body>
-    <h1>WDD 131 Rick Shaw</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Rick Shaw</h1>
+        <nav>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng">Scripture</a>
+            <a href="https://www.linkedin.com/in/rickshawcalgary" target="_blank">Rick Shaw LinkedIn</a>
+            <a href="wwr/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section class="card about">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Rick Shaw Profile Picture" class="profile-pic">
+            <p>
+                My name is Rick Shaw. I am a professional project manager (PMP) and I am currently self-employed as a
+                program manager and project manager consultant. I am married with three grown boys. I enjoy photography,
+                camping, and cruising. I am from New Zealand, but now live in Calgary, AB, Canada. I am enrolled in the
+                software development program and hope to incorporate that knowledge into my current consulting work.
+            </p>
+        </section>
+
+        <!-- Web Dev Resources Section -->
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://validator.w3.org/#validate_by_input" target="_blank">Markup Validation Service</a>
+                </li>
+                <li><a href="https://codepen.io/pen" target="_blank">CodePen</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript Web
+                        Docs</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Rick Shaw | Calgary, Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/currentyear.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </body>
+
 </html>
