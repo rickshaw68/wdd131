@@ -1,0 +1,142 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif, Arial;
+}
+
+/* Header */
+header {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #005488;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Adding the Hamburger Menu */
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+nav {
+    background-color: #8aa6c5;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 100%; 
+    display: flex; 
+    justify-content: space-evenly;  
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.5rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: #eaa3d2;
+    text-decoration: underline;
+    color: rgb(79, 6, 6);
+}
+
+.navigation.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "❌";
+    font-size: 1.2rem;
+}
+
+.active {
+    color: yellow;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Gallery (Default and Small Screens) */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Default: 3 images per row */
+    gap: 1rem;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #005488;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Small Screens: Gallery Adjustments */
+@media screen and (max-width: 740px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        /* Switch to 1 image per row for small screens */
+    }
+
+
+}
