@@ -41,7 +41,7 @@ h4 {
 
 /* Hero Section */
 .hero {
-    position: relative;    
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,17 +64,20 @@ h4 {
 
 /* Info Boxes */
 .info-box {
-    position: absolute; /* this will make the info boxes overlap the main image */    
+    position: absolute;
+    /* this will make the info boxes overlap the main image */
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.6);  /* set the image boxes tranparancy to 0.6 */  
+    background-color: rgba(0, 0, 0, 0.6);
+    /* set the image boxes tranparancy to 0.6 */
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     width: 20%;
-    margin: 1rem;    
+    margin: 1rem;
 }
 
-.info-box ul, .info-box li {
+.info-box ul,
+.info-box li {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -85,13 +88,22 @@ h4 {
 }
 
 .data {
-    top: 10%; /* setting box position */    
-    left: 5%;    
+    top: 10%;
+    /* setting box position */
+    left: 5%;
 }
 
 .weather {
-    bottom: 25%; /* Setting box position */   
-    right: 5%;    
+    bottom: 25%;
+    /* Setting box position */
+    right: 5%;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+
 }
 
 ul {
