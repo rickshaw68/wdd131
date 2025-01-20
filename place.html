@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Rick Shaw | Place</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rick Shaw | Place">
+    <meta name="author" content="Rick Shaw">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="images/fern.png" alt="Silver Fern" style="width: 70px; vertical-align: middle;">
+            New Zealand
+            <img src="images/fern.png" alt="Silver Fern" style="width: 70px; vertical-align: middle;">
+        </h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/New_Zealand.webp">
+                <source media="(min-width: 500px)" srcset="images/New_Zealand-1.webp">
+                <img src="images/New_Zealand2.webp" alt="New Zealand" class="responsive-image">
+            </picture>
+
+            <!-- Data Box -->
+            <div class="info-box data">
+                <h3>New Zealand Data</h3>
+                <ul>
+                    <li>
+                        <h3>Area:</h3>
+                        <h4>268,021 sq km</h4>
+                    </li>
+                    <li>
+                        <h3>Population:</h3>
+                        <h4>5,123,000</h4>
+                    </li>
+                    <li>
+                        <h3>Capital:</h3>
+                        <h4>Wellington</h4>
+                    </li>
+                    <li>
+                        <h3>Languages:</h3>
+                        <h4>Maori, English</h4>
+                    </li>
+                    <li>
+                        <h3>Currency:</h3>
+                        <h4>NZD</h4>
+                    </li>
+                    <li>
+                        <h3>Time Zone:</h3>
+                        <h4>UTC/GMT+13:45</h4>
+                    </li>
+                    <li>
+                        <h3>Calling Code:</h3>
+                        <h4>+64</h4>
+                    </li>
+                    <li>
+                        <h3>Internet TLD:</h3>
+                        <h4>.nz</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Weather Box -->
+            <div class="info-box weather">
+                <h3>Weather ⛅</h3>
+                <ul>
+                    <li>Temperature: 18°C</li>
+                    <li>Conditions: Sunny</li>
+                    <li>Wind: 10 km/h</li>
+                    <li>Humidity: 60%</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="getdates"></span> Rick Shaw | Calgary, Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+
+</body>

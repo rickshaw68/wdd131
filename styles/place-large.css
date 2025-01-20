@@ -1,0 +1,12 @@
+@media screen and (min-width: 1000px) {
+    .responsive-image {
+        width: 80%;
+
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .responsive-image {
+        width: 80%;
+    }
+}

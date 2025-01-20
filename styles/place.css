@@ -1,0 +1,154 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif, Arial;
+}
+
+/* Header */
+header {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: royalblue;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: black;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .25rem;
+    color: rgb(240, 226, 226);
+}
+
+h4 {
+    padding: .25rem;
+    margin-left: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: silver;
+    margin: 0;
+    height: auto;
+}
+
+/* Responsive Image Section */
+.responsive-image {
+    width: 90%;
+    max-width: 1800px;
+    height: auto;
+    border: 50px solid black;
+    outline: 10px solid #CC3300;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Boxes */
+.info-box {
+    position: absolute; /* this will make the info boxes overlap the main image */    
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);  /* set the image boxes tranparancy to 0.6 */  
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    margin: 1rem;    
+}
+
+.info-box ul, .info-box li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.info-box ul {
+    padding: 0.5rem;
+}
+
+.data {
+    top: 10%; /* setting box position */    
+    left: 5%;    
+}
+
+.weather {
+    bottom: 25%; /* Setting box position */   
+    right: 5%;    
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Media Query for Medium Screens */
+@media screen and (min-width: 500px) {
+    .responsive-image {
+        width: 100%;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-areas:
+            "data image weather";
+        grid-template-columns: 1fr 3fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+    }
+
+    .responsive-image {
+        width: 100%;
+    }
+}
+
+/* Small and Medium Screen Layout */
+@media screen and (max-width: 999px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        position: static;
+        width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
