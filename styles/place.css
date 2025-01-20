@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: royalblue;
+    --secondary-color: black;
+    --header-font-size: 3rem;
+    --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* Body */
 body {
     font-family: 'Roboto', sans-serif, Arial;
@@ -15,14 +22,14 @@ header {
     max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
-    background-color: royalblue;
+    background-color: var(--primary-color);
     text-align: center;
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    color: whitesmoke;
+    font-size: var(--header-font-size);
+    color: var(--secondary-color);
     margin: 0;
 }
 
@@ -30,6 +37,16 @@ h1 {
     width: 70px;
     vertical-align: middle;
     margin: 0 10px;
+}
+
+h1::after {
+    content: "";    
+    display: block;    
+    margin: 0.5rem auto;    
+    width: 50%;    
+    height: 4px;    
+    background-color: var(--secondary-color);    
+    border-radius: 2px;    
 }
 
 
@@ -66,7 +83,7 @@ h4 {
     border: 50px solid black;
     outline: 10px solid #CC3300;
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
 }
 
 /* Info Boxes */
@@ -78,7 +95,7 @@ h4 {
     /* set the image boxes tranparancy to 0.6 */
     color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     width: 20%;
     margin: 1rem;
 }
