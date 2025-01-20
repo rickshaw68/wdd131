@@ -22,9 +22,16 @@ header {
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
-    color: black;
+    color: whitesmoke;
     margin: 0;
 }
+
+.fern-icon {
+    width: 70px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
 
 h3 {
     font-family: 'Poppins', sans-serif;
