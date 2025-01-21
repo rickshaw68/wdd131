@@ -40,13 +40,13 @@ h1 {
 }
 
 h1::after {
-    content: "";    
-    display: block;    
-    margin: 0.5rem auto;    
-    width: 50%;    
-    height: 4px;    
-    background-color: var(--secondary-color);    
-    border-radius: 2px;    
+    content: "";
+    display: block;
+    margin: 0.5rem auto;
+    width: 50%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
 }
 
 
