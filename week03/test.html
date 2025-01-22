@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Wind Chill</title>
+</head>
+<body>
+    <h1>Wind Chill Calculator Test</h1>
+    <script>
+        function calculateWindChill(temperature, windSpeed) {
+            if (temperature > 10 || windSpeed <= 4.8) {
+                return "N/A";
+            }
+            return (
+                13.12 +
+                0.6215 * temperature -
+                11.37 * Math.pow(windSpeed, 0.16) +
+                0.3965 * temperature * Math.pow(windSpeed, 0.16)
+            ).toFixed(2);
+        }
+
+        console.log(calculateWindChill(5, 10)); // Should output: "0.24"
+        console.log(calculateWindChill(15, 10)); // Should output: "N/A"
+        console.log(calculateWindChill(5, 4)); // Should output: "N/A"
+    </script>
+</body>
+</html>
