@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --background-color: silver;
+    --primary-color: #005488;
+    --secondary-color: #8aa6c5;
+    --highlight-color: yellow;
+    --hover-bg-color: #003d66;
+    --card-bg-color: #fff;
+    --card-border-color: #ddd;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --gallery-gap: 1rem;
+    --gallery-min-width: 300px;
+    --header-font-size: 2.5rem;
+    --card-font-size: 1.2rem;
+    --footer-padding: 0.5rem;
+    --footer-text-color: white;
+    --hover-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    --hover-transition: transform 0.5s ease, box-shadow 0.5s ease;
+    --h2-text-color: black;
+}
+
+/* Fade-in Animation */
+@keyframes fadeFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+/* Hover Effect for Images or Elements */
+.hover {
+    animation: fadeFromBlack 3s ease-out;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: var(--hover-transition);
+}
+
+.hover:hover {
+    transform: scale(1.05);
+    box-shadow: var(--hover-shadow);
+}
+
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif, Arial;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--footer-text-color);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Ensure the header spans the full width */
+}
+
+h1 {
+    font-size: var(--header-font-size);
+    color: var(--footer-text-color);
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Adding the Hamburger Menu */
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: var(--footer-text-color);
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+nav {
+    background-color: #8aa6c5;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.5rem 2rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: #eaa3d2;
+    text-decoration: underline;
+    color: rgb(79, 6, 6);
+}
+
+.navigation.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "❌";
+    font-size: 1.2rem;
+}
+
+.active {
+    color: yellow;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--gallery-min-width), 1fr));
+    gap: var(--gallery-gap);
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Temple Cards */
+.temple-card {
+    background: var(--card-bg-color);
+    border: 2px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.temple-card h3 {
+    font-size: var(--card-font-size);
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.temple-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: var(--footer-padding);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Small Screens: Gallery Adjustments */
+@media screen and (max-width: 740px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        /* one image per row */
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Rick Shaw</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rick Shaw | Lazy Load">
+        <meta name="author" content="Rick Shaw">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/lazyload.css">
+    </head>
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header> 
+    <main>
+    <h2>Temples</h2>    
+        <section class="gallery">
+            <figure>
+                <img class="hover" src="../images/calgary-alberta-temple.jpg" alt="Calgary Alberta Temple" loading="lazy" width="400" height="600">
+                <figcaption>Calgary Alberta</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/cardston-alberta-temple.jpg" alt="Cardston Alberta Temple" loading="lazy" width="400" height="600">
+                <figcaption>Cardston Alberta</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/edmonton-alberta-temple.jpg" alt="Edmonton Alberta Temple" loading="lazy" width="400" height="600">
+                <figcaption>Edmonton Alberta</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/jordan-river.jpg" alt="Jordan River Temple" loading="lazy" width="400" height="600">
+                <figcaption>Jordan River Utah</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/las-vegas.jpg" alt="Las Vegas Temple" loading="lazy" width="400" height="600">
+                <figcaption>Las Vegas Nevada</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/logan-temple.jpg" alt="Logan Utah Temple" loading="lazy" width="400" height="600">
+                <figcaption>Logan Utah</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/provo-utah.jpg" alt="Provo Utah Temple" loading="lazy" width="400" height="600">
+                <figcaption>Provo Utah</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/salt-lake-temple.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="600">
+                <figcaption>Salt Lake City Utah</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/seattle-washington.jpg" alt="Seattle Washington Temple" loading="lazy" width="400" height="600">
+                <figcaption>Seattle Washington</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="../images/st-george.jpg" alt="St. George Utah Temple" loading="lazy" width="400" height="600">
+                <figcaption>St. George Utah</figcaption>
+            </figure>
+        </section>    
+
+    </main>
+    <footer>
+        <p>&copy; <span id="getdates"></span> Rick Shaw | Calgary, Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/lazyload.js" defer></script>
+</body>
+</html>

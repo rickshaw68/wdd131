@@ -1,0 +1,63 @@
+@media screen and (min-width: 741px) {
+    header {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;        
+        text-align: center;
+        color: var(--footer-text-color);        
+        margin: 1rem 0;        
+        display: block;        
+        color: var(--h2-text-color);
+    }
+
+    .navigation {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+    }
+
+    .navigation a {
+        color: var(--h2-text-color);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .navigation a:hover {
+        background-color: var(--hover-bg-color);
+        color: var(--footer-text-color);
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navigation a.active {
+        color: #680748;
+        font-weight: bold;
+    }
+
+    .navigation a.active::before {
+        content: "📍";
+        color: #680748;
+    }
+
+
+}

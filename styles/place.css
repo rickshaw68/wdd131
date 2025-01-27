@@ -15,6 +15,12 @@
 /* Body */
 body {
     font-family: 'Roboto', sans-serif, Arial;
+    background-image: url('images/fern.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
 }
 
 /* Header */
@@ -71,14 +77,16 @@ h4 {
     align-items: center;
     padding: 1rem;
     background-color: silver;
-    margin: 0;
+    margin: 0 auto;
     height: auto;
+    max-width: 100%;
 }
 
 /* Responsive Image Section */
 .responsive-image {
-    width: 90%;
-    max-width: 1800px;
+    position: relative;
+    /* Make the image the containing parent for absolute positioning */
+    width: 100%;
     height: auto;
     border: 50px solid black;
     outline: 10px solid #CC3300;
@@ -89,15 +97,17 @@ h4 {
 /* Info Boxes */
 .info-box {
     position: absolute;
-    /* this will make the info boxes overlap the main image */
+    /* Position the box relative to the responsive image */
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.6);
-    /* set the image boxes tranparancy to 0.6 */
     color: white;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     width: 20%;
-    margin: 1rem;
+    /* Size relative to the image's width */
+    max-width: 300px;
+    margin: 0;
+    /* Remove margins for precise positioning */
 }
 
 .info-box ul,
@@ -172,7 +182,7 @@ ul {
 
     .info-box {
         position: static;
-        width: 90%;
+        width: 100%;
         margin-top: 1rem;
     }
 }
