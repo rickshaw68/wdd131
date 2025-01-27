@@ -120,11 +120,12 @@ function renderTemples(filter) {
             filteredTemples = temples;
     }
 
-    filteredTemples.forEach((temple) => {
+    filteredTemples.forEach((temple, index) => {
         const card = document.createElement('div');
         card.classList.add('temple-card');
+        const lazyLoading = index < 6 ? '' : 'loading="lazy"';
         card.innerHTML = `
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" class="hover">
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" ${lazyLoading} width="400" height="250" class="hover">
             <h3>${temple.templeName}</h3>
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
