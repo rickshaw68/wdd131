@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #5f1f04;              
-    --secondary-color: #2b0b61;             
-    --accent1-color: #39146339;            
-    --accent2-color: #3a0842;             
-    --heading-font: 'Roboto', sans-serif;    
-    --paragraph-font: Arial, sans-serif;      
-    --nav-background-color: rgb(4, 85, 118);         
-    --nav-link-color: rgb(52, 50, 37);              
-    --nav-hover-link-color: #670909;                  
-    --nav-hover-background-color: #676767;             
+    --primary-color: #5f1f04;
+    --secondary-color: #2b0b61;
+    --accent1-color: #39146339;
+    --accent2-color: #3a0842;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: Arial, sans-serif;
+    --nav-background-color: rgb(4, 85, 118);
+    --nav-link-color: rgb(52, 50, 37);
+    --nav-hover-link-color: #670909;
+    --nav-hover-background-color: #676767;
 }
 
 * {
@@ -26,10 +26,16 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    text-align: center; /* Correct way to center headings */
+    text-align: center;
+    /* Correct way to center headings */
 }
 
 header {
@@ -38,14 +44,16 @@ header {
     margin: 1rem auto;
     border-bottom: 1px solid #0e0202;
     max-width: 1200px;
-    text-align: center; /* Centers text and content in the header */
+    text-align: center;
+    /* Centers text and content in the header */
 }
 
 .header-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    justify-content: center; /* Centers grid content horizontally */
+    justify-content: center;
+    /* Centers grid content horizontally */
 }
 
 
@@ -53,7 +61,7 @@ header {
     justify-self: center;
 }
 
-.logo img {    
+.logo img {
     width: 500px;
     height: auto;
 }
@@ -67,28 +75,30 @@ p {
 
 .img {
     display: block;
-    margin: 0 auto; /* Centers the image horizontally */
+    margin: 0 auto;   
 }
 
 /* Button Styling */
 .button {
-    background-color: var(--primary-color); /* Uses primary color */
-    color: white; /* Text color */
+    background-color: var(--primary-color);    
+    color: white;    
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     font-family: var(--heading-font);
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;    
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
-    background-color: var(--nav-hover-link-color); /* Darker shade on hover */
+    background-color: var(--nav-hover-link-color);    
 }
 
 /* Heading Styling */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--heading-font);
     font-weight: bold;
 }
@@ -107,18 +117,16 @@ h3 {
 
 li {
     color: var(--primary-color);
-    font-size: 16px; 
-    margin-bottom: 5px; 
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 
 /* Section Backgrounds */
 section {
-    background-color: rgb(150, 223, 223, 0.3); 
-    color: white; 
+    background-color: rgb(150, 223, 223, 0.3);
+    color: white;
     padding: 20px;
     margin: 20px 0;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-
-
