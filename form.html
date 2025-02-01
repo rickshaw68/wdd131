@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Form - Rick Shaw</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rick Shaw | Form">
+    <meta name="author" content="Rick Shaw">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="styles/form-normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/form.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <h1>Product Review</h1>        
+    </header>
+    
+
+    <!-- CONTENT HERE -->
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label for="product">Product Name*</label>
+                <select name="product" id="product" required>
+                    <option value="">Select a Product...</option>
+                    <option value="plunger">Plunger</option>
+                    <option value="snake">Drain Snake</option>
+                    <option value="cog">Tiny Cog</option>
+                    <option value="wheel">Large Wheel</option>
+                    <option value="tape">Tuk Tape</option>
+                    <option value="spinner">Fidget Spinner</option>
+                    <option value="popper">Popcorn Popper</option>
+                    <option value="stopper">Water Stopper</option>
+                </select>
+            </fieldset>
+    
+            <fieldset>
+                <label for="star-rating">Overall Rating*</label>
+                <div class="star-rating">
+                    <label>
+                        <span>&#9733;</span>
+                        <input type="radio" name="rating" value="1" required>
+                    </label>
+                    <label>
+                        <span>&#9733;&#9733;</span>
+                        <input type="radio" name="rating" value="2">
+                    </label>
+                    <label>
+                        <span>&#9733;&#9733;&#9733;</span>
+                        <input type="radio" name="rating" value="3">
+                    </label>
+                    <label>
+                        <span>&#9733;&#9733;&#9733;&#9733;</span>
+                        <input type="radio" name="rating" value="4">
+                    </label>
+                    <label>
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <input type="radio" name="rating" value="5">
+                    </label>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <label for="installedDate">Date of Installation*</label>
+                <input type="date" id="installedDate" name="installedDate" required>
+            </fieldset>
+    
+            <fieldset>
+                <label>Which Features Did You Find Most Useful In The Product</label>
+                <label class="check-all-label">(Check All That Apply)</label>
+                <label><input type="checkbox" name="durability" value="yes"><span>Durability</span></label>
+                <label><input type="checkbox" name="use" value="yes"><span>Ease of Use</span></label>
+                <label><input type="checkbox" name="performance" value="yes"><span>Performance</span></label>
+                <label><input type="checkbox" name="design" value="yes"><span>Design</span></label>
+            </fieldset>
+    
+            <fieldset>
+                <label for="message">Written Review (Optional)</label>
+                <textarea id="message" name="message" placeholder="Type your review here..."></textarea>
+            </fieldset>
+    
+            <fieldset>
+                <label for="name">Your Name (Optional)</label>
+                <input type="text" id="name" name="name">
+            </fieldset>
+    
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    
+
+    <footer>
+        <p>&copy; <span id="getdates"></span> Rick Shaw | Calgary, Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+
+</html>
