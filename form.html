@@ -18,7 +18,7 @@
     <!-- phone-default -->
     <link href="styles/form.css" rel="stylesheet">
     <!-- enhance-tablet -->
-    
+
 
 
 
@@ -27,9 +27,9 @@
 <body>
     <!-- HEADER HERE -->
     <header>
-        <h1>Product Review</h1>        
+        <h1>Product Review</h1>
     </header>
-    
+
 
     <!-- CONTENT HERE -->
     <main>
@@ -48,8 +48,9 @@
                     <option value="stopper">Water Stopper</option>
                 </select>
             </fieldset>
-    
+
             <fieldset>
+                <legend>Ratings</legend>
                 <label for="star-rating">Overall Rating*</label>
                 <div class="star-rating">
                     <label>
@@ -74,12 +75,12 @@
                     </label>
                 </div>
             </fieldset>
-    
+
             <fieldset>
                 <label for="installedDate">Date of Installation*</label>
                 <input type="date" id="installedDate" name="installedDate" required>
             </fieldset>
-    
+
             <fieldset>
                 <label>Which Features Did You Find Most Useful In The Product</label>
                 <label class="check-all-label">(Check All That Apply)</label>
@@ -88,21 +89,21 @@
                 <label><input type="checkbox" name="performance" value="yes"><span>Performance</span></label>
                 <label><input type="checkbox" name="design" value="yes"><span>Design</span></label>
             </fieldset>
-    
+
             <fieldset>
                 <label for="message">Written Review (Optional)</label>
                 <textarea id="message" name="message" placeholder="Type your review here..."></textarea>
             </fieldset>
-    
+
             <fieldset>
                 <label for="name">Your Name (Optional)</label>
                 <input type="text" id="name" name="name">
             </fieldset>
-    
+
             <input type="submit" value="Post Review">
         </form>
     </main>
-    
+
 
     <footer>
         <p>&copy; <span id="getdates"></span> Rick Shaw | Calgary, Alberta, Canada</p>
