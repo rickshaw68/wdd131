@@ -34,19 +34,12 @@
     <!-- CONTENT HERE -->
     <main>
         <form method="get" action="review.html" class="wf1">
-            <fieldset>
-                <label for="product">Product Name*</label>
-                <select name="product" id="product" required>
-                    <option value="">Select a Product...</option>
-                    <option value="plunger">Plunger</option>
-                    <option value="snake">Drain Snake</option>
-                    <option value="cog">Tiny Cog</option>
-                    <option value="wheel">Large Wheel</option>
-                    <option value="tape">Tuk Tape</option>
-                    <option value="spinner">Fidget Spinner</option>
-                    <option value="popper">Popcorn Popper</option>
-                    <option value="stopper">Water Stopper</option>
-                </select>
+            <fieldset>                
+                <form id="review-form">
+                    <label for="product-select">Product Name*</label>
+                    <select id="product-select" required>
+                        <option value="">--Select a product--</option>
+                    </select>
             </fieldset>
 
             <fieldset>
@@ -58,19 +51,19 @@
                     </label>
                     <label>
                         <span>&#9733;&#9733;</span>
-                        <input type="radio" name="rating" value="2">
+                        <input type="radio" name="rating" value="2" required>
                     </label>
                     <label>
                         <span>&#9733;&#9733;&#9733;</span>
-                        <input type="radio" name="rating" value="3">
+                        <input type="radio" name="rating" value="3" required>
                     </label>
                     <label>
                         <span>&#9733;&#9733;&#9733;&#9733;</span>
-                        <input type="radio" name="rating" value="4">
+                        <input type="radio" name="rating" value="4" required>
                     </label>
                     <label>
                         <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <input type="radio" name="rating" value="5">
+                        <input type="radio" name="rating" value="5" required>
                     </label>
                 </div>
             </fieldset>
@@ -101,6 +94,7 @@
 
             <input type="submit" value="Post Review">
         </form>
+        <p id="review-count"></p>
     </main>
 
 
