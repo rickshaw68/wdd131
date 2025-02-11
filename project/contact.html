@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Rick Shaw</title>
+    <meta name="description"
+        content="Kromed Project Services - Expert project management in telecom, oil & gas, and rail systems. Led by Rick Shaw, PMP & Scrum Master Certified.">
+    <meta name="author" content="Rick Shaw">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/kromedps.css">
+</head>
+
+<body>
+    <header>
+        <div class="grid header-grid">
+            <div class="logo">
+                <img src="images/KPS_LOGO_Image.png" alt="Kromed Project Services company logo">
+                <h1>Contact Us</h1>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul class="navigation">
+                    <li><a href="kromedps.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="grid">
+        <main>
+            <div class="contact-container">
+                <h1>Kromed Project Services -- Contact Us</h1>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 259 Covewood Green NE, Calgary AB, T3K 5E7</p>
+                    <p><strong>Phone:</strong> (403) 510-8634</p>
+                    <p><strong>Email:</strong> rick.shaw@kromedps.com</p>
+                </div>
+            </div>
+            <div class="location-container">
+                <h2>Our Location</h2>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2501.6657861763615!2d-114.04468212222307!3d51.1699506717387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537166c55a0c3221%3A0xf817635a3413063f!2s259%20Covewood%20Green%20NE%2C%20Calgary%2C%20AB%20T3K%205E7!5e0!3m2!1sen!2sca!4v1738686873521!5m2!1sen!2sca"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <section class="our_team">
+        <h2>Our Team</h2>
+        <div class="image-container">
+            <figure>
+                <img src="images/rick.webp" alt="Rick" loading="lazy">
+                <figcaption>Rick</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tina.webp" alt="Tina" loading="lazy">
+                <figcaption>Kristina</figcaption>
+            </figure>
+
+        </div>
+    </section>
+    <form method="get" action="confirm.html">
+        <fieldset>
+            <legend>Contact Request</legend>
+            <div class="form-item column2">
+                <label for="fullname">Full Name:*</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="usermail">Email:*</label>
+                <input type="text" id="usermail" name="usermail" required>
+            </div>
+            <div class="form-item">
+                <label class="label-column" for="message">Purpose of Message:*</label>
+                <div>
+                    <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
+                    <label for="general-inquiry">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation-question" name="purpose" value="Availability">
+                    <label for="reservation-question">Availability</label>
+                </div>
+                <div>
+                    <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion">
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
+                <div class="message">
+                    <label class="label-column" for="message">Your Message:*</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here"
+                        required></textarea>
+                </div>
+            </div>
+            <div class="newsletter">
+                <label for="news">Would you like to receive our newsletter?</label>
+                <input type="checkbox" id="news" name="news" value="Yes">
+                <label for="news">Yes</label>
+            </div>
+
+        </fieldset>
+        <button type="submit" value="Submit Poll">Submit Request</button>
+    </form>
+    
+    <footer>
+        <p>&copy; <span id="getdates"></span> Rick Shaw | Calgary, Alberta, Canada</p>
+        <p id="lastModified"></p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/KromedPS" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/kromed-project-services-inc" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/kromedps.js" defer></script>
+</body>
+
+</html>

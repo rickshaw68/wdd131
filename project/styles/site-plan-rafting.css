@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    padding: 10px;
+}
+
+nav a {
+    background-color: var(--nav-link-color);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-background-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    padding: 25px;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    background-color: rgb(150, 223, 223);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #5f1f04;              
+    --secondary-color: #bfae48;             
+    --accent1-color: #39146339;            
+    --accent2-color: #3a0842;             
+    --heading-font: 'Roboto', sans-serif;    
+    --paragraph-font: Arial, sans-serif;      
+    --nav-background-color: rgb(4, 85, 118);         
+    --nav-link-color: rgb(219, 200, 94);              
+    --nav-hover-link-color: #670909;                  
+    --nav-hover-background-color: #676767;             
+}
+
+
